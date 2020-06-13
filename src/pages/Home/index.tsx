@@ -92,7 +92,7 @@ const Home: React.FC = () => {
             src="https://images.vexels.com/media/users/3/193073/isolated/preview/797b0d45317985fb24e04cd5e323081c-covid-19-2019-ncov-acidente-vascular-cerebral---cone-by-vexels.png"
             alt="covid"
           />
-          <h1>Coronavirus Data</h1>
+          <h1>CoronavirusData</h1>
         </header>
         <InputContainer>
           <select
