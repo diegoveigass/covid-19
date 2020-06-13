@@ -85,56 +85,58 @@ const Home: React.FC = () => {
   );
 
   return (
-    <Container>
-      <header>
-        <img
-          src="https://images.vexels.com/media/users/3/193073/isolated/preview/797b0d45317985fb24e04cd5e323081c-covid-19-2019-ncov-acidente-vascular-cerebral---cone-by-vexels.png"
-          alt="covid"
-        />
-        <h1>Coronavirus Data</h1>
-      </header>
-      <InputContainer>
-        <select
-          name="country"
-          id="country"
-          value={selectedCountry}
-          onChange={handleSelectedCountry}
-        >
-          <option value="0">Select one country</option>
-          {countries.map(country => (
-            <option key={country} value={country}>
-              {country}
-            </option>
-          ))}
-        </select>
-      </InputContainer>
+    <>
+      <Container>
+        <header>
+          <img
+            src="https://images.vexels.com/media/users/3/193073/isolated/preview/797b0d45317985fb24e04cd5e323081c-covid-19-2019-ncov-acidente-vascular-cerebral---cone-by-vexels.png"
+            alt="covid"
+          />
+          <h1>Coronavirus Data</h1>
+        </header>
+        <InputContainer>
+          <select
+            name="country"
+            id="country"
+            value={selectedCountry}
+            onChange={handleSelectedCountry}
+          >
+            <option value="0">Select one country</option>
+            {countries.map(country => (
+              <option key={country} value={country}>
+                {country}
+              </option>
+            ))}
+          </select>
+        </InputContainer>
 
-      <CardContainer>
-        <Card>
-          <h1>Cases</h1>
-          <span>
-            {countriesData.cases
-              ? numberFormat(countriesData.cases)
-              : 'Select a country'}
-          </span>
-        </Card>
-        <Card type="recovered">
-          <h1>Recovered</h1>
-          <span>
-            {countriesData.recovered
-              ? numberFormat(countriesData.recovered)
-              : 'Select a country'}
-          </span>
-        </Card>
-        <Card type="deaths">
-          <h1>Deaths</h1>
-          <span>
-            {countriesData.deaths
-              ? numberFormat(countriesData.deaths)
-              : 'Select a country'}
-          </span>
-        </Card>
-      </CardContainer>
+        <CardContainer>
+          <Card>
+            <h1>Cases</h1>
+            <span>
+              {countriesData.cases
+                ? numberFormat(countriesData.cases)
+                : 'Select a country'}
+            </span>
+          </Card>
+          <Card type="recovered">
+            <h1>Recovered</h1>
+            <span>
+              {countriesData.recovered
+                ? numberFormat(countriesData.recovered)
+                : 'Select a country'}
+            </span>
+          </Card>
+          <Card type="deaths">
+            <h1>Deaths</h1>
+            <span>
+              {countriesData.deaths
+                ? numberFormat(countriesData.deaths)
+                : 'Select a country'}
+            </span>
+          </Card>
+        </CardContainer>
+      </Container>
       <Footer>
         <h1>Last updated</h1>
         <h3>{updatedDate}</h3>
@@ -144,7 +146,7 @@ const Home: React.FC = () => {
           Made by @diegoveigass
         </a>
       </Credits>
-    </Container>
+    </>
   );
 };
 
