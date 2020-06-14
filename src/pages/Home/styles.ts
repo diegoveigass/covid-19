@@ -63,8 +63,8 @@ export const InputContainer = styled.div`
 
 export const CardContainer = styled.div`
   width: 100%;
-  height: 100%;
-  margin: 150px auto;
+  height: 52vh;
+  margin: 0 auto;
 
   display: flex;
   align-items: center;
@@ -118,17 +118,24 @@ export const Card = styled.div<CardsProps>`
 `;
 
 export const Footer = styled.footer`
+  display: flex;
+  flex-direction: column;
+
+  border-top: 1px solid #eee;
+
+  justify-content: center;
+  align-items: center;
+
   text-align: center;
   margin-bottom: 32px;
 
   @media (max-width: 900px) {
-    bottom: -100px;
-
     text-align: center;
     margin-bottom: 16px;
   }
 
   h1 {
+    margin-top: 16px;
     color: #fbfbff;
     margin-bottom: 16px;
   }
