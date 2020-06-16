@@ -1,5 +1,10 @@
 # Covid 19 Data
 
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e97a500b-a5b8-4cda-86f8-3a3280d38ed9/deploy-status)](https://app.netlify.com/sites/covid19diegoveiga/deploys)
+<br />
+https://covid19diegoveiga.netlify.app/
+
 A simple website that contain a cases, deaths and recovered people around the world.
 
 In this application i used this API'S:
